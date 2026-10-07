@@ -1,0 +1,5 @@
+{
+  "in_memory_channel_rps": 28400,
+  "sharded_counter_rps": 6800,
+  "single_row_lock_rps": 420
+}

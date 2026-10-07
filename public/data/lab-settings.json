@@ -1,0 +1,8 @@
+{
+  "effective_cache_size": "48GB",
+  "hardware": "16 vCPUs (AMD EPYC), 64 GB RAM, Enterprise NVMe SSD",
+  "maintenance_work_mem": "4GB",
+  "max_parallel_workers_per_gather": 4,
+  "shared_buffers": "16GB",
+  "work_mem": "64MB"
+}

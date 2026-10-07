@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: sqlx_mastery_postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: mastery_db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    command: >
+      postgres
+      -c shared_buffers=16GB
+      -c work_mem=64MB
+      -c maintenance_work_mem=4GB
+      -c effective_cache_size=48GB
+      -c max_parallel_workers_per_gather=4
+      -c max_connections=100
+      -c wal_level=replica
+      -c max_wal_size=16GB
+      -c min_wal_size=2GB
+      -c checkpoint_completion_target=0.9
+      -c random_page_cost=1.1
+      -c effective_io_concurrency=200
+
+volumes:
+  pgdata:

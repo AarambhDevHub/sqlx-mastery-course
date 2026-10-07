@@ -1,0 +1,17 @@
+[
+  {
+    "Execution Time": 12.4,
+    "Plan": {
+      "Actual Total Time": 12.4,
+      "Node Type": "Bitmap Heap Scan",
+      "Plans": [
+        {
+          "Actual Total Time": 8.1,
+          "Index Name": "idx_lab_users_username_trgm_gin",
+          "Node Type": "Bitmap Index Scan"
+        }
+      ],
+      "Relation Name": "lab_users"
+    }
+  }
+]

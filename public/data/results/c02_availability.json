@@ -1,0 +1,6 @@
+{
+  "bloom_filter_nanos": 120,
+  "count_star_ms": 128400.0,
+  "exists_query_ms": 0.45,
+  "queries_avoided_pct": 98.4
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "Execution Time": 0.28,
+    "Plan": {
+      "Actual Total Time": 0.28,
+      "Index Name": "idx_lab_users_covering",
+      "Node Type": "Index Only Scan",
+      "Relation Name": "lab_users",
+      "Shared Hit Blocks": 3,
+      "Shared Read Blocks": 0
+    }
+  }
+]

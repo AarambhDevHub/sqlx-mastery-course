@@ -1,0 +1,7 @@
+{
+  "batched_delete_ms": 420.0,
+  "bulk_delete_ms": 45200.0,
+  "partition_drop_ms": 0.08,
+  "wal_bloat_bulk_mb": 32768,
+  "wal_bloat_drop_mb": 0
+}

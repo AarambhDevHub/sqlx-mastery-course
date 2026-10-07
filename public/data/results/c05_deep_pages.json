@@ -1,0 +1,22 @@
+[
+  {
+    "keyset_ms": 0.41,
+    "offset_ms": 0.4,
+    "page": 1
+  },
+  {
+    "keyset_ms": 0.42,
+    "offset_ms": 12.8,
+    "page": 1000
+  },
+  {
+    "keyset_ms": 0.41,
+    "offset_ms": 640.0,
+    "page": 50000
+  },
+  {
+    "keyset_ms": 0.42,
+    "offset_ms": 6800.0,
+    "page": 500000
+  }
+]

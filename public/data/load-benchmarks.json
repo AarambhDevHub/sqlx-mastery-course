@@ -1,0 +1,22 @@
+[
+  {
+    "binds_per_statement": 3,
+    "method": "Single Inserts",
+    "rows_per_sec": 620
+  },
+  {
+    "binds_per_statement": 60000,
+    "method": "QueryBuilder Batch (20k)",
+    "rows_per_sec": 85000
+  },
+  {
+    "binds_per_statement": 3,
+    "method": "Array UNNEST",
+    "rows_per_sec": 110000
+  },
+  {
+    "binds_per_statement": 0,
+    "method": "Parallel COPY (8 workers)",
+    "rows_per_sec": 1240000
+  }
+]

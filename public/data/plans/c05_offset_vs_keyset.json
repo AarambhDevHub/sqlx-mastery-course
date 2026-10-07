@@ -1,0 +1,13 @@
+{
+  "keyset_plan": {
+    "Actual Total Time": 0.41,
+    "Index Name": "lab_users_pkey",
+    "Node Type": "Index Scan",
+    "Shared Hit Blocks": 4
+  },
+  "offset_plan": {
+    "Actual Total Time": 2420.0,
+    "Node Type": "Limit",
+    "Rows Removed by Offset": 10000000
+  }
+}

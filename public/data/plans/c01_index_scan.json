@@ -1,0 +1,46 @@
+[
+  {
+    "Execution Time": 0.052,
+    "Plan": {
+      "Actual Loops": 1,
+      "Actual Rows": 0,
+      "Actual Startup Time": 0.018,
+      "Actual Total Time": 0.019,
+      "Alias": "lab_users",
+      "Async Capable": false,
+      "Filter": "(username = 'alice'::text)",
+      "Local Dirtied Blocks": 0,
+      "Local Hit Blocks": 0,
+      "Local Read Blocks": 0,
+      "Local Written Blocks": 0,
+      "Node Type": "Seq Scan",
+      "Parallel Aware": false,
+      "Plan Rows": 1,
+      "Plan Width": 81,
+      "Relation Name": "lab_users",
+      "Rows Removed by Filter": 145,
+      "Shared Dirtied Blocks": 0,
+      "Shared Hit Blocks": 5,
+      "Shared Read Blocks": 0,
+      "Shared Written Blocks": 0,
+      "Startup Cost": 0.0,
+      "Temp Read Blocks": 0,
+      "Temp Written Blocks": 0,
+      "Total Cost": 6.81
+    },
+    "Planning": {
+      "Local Dirtied Blocks": 0,
+      "Local Hit Blocks": 0,
+      "Local Read Blocks": 0,
+      "Local Written Blocks": 0,
+      "Shared Dirtied Blocks": 0,
+      "Shared Hit Blocks": 234,
+      "Shared Read Blocks": 0,
+      "Shared Written Blocks": 0,
+      "Temp Read Blocks": 0,
+      "Temp Written Blocks": 0
+    },
+    "Planning Time": 0.88,
+    "Triggers": []
+  }
+]

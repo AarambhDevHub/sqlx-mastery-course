@@ -1,0 +1,18 @@
+[
+  {
+    "Execution Time": 0.35,
+    "Plan": {
+      "Actual Total Time": 0.35,
+      "Lock Mode": "For Update",
+      "Node Type": "LockRows",
+      "Plans": [
+        {
+          "Actual Total Time": 0.12,
+          "Index Name": "idx_jobs_status_created_at",
+          "Node Type": "Index Scan"
+        }
+      ],
+      "Skip Locked": true
+    }
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "correlated_subquery_ms": 48900.0,
+  "distinct_on_ms": 320.0,
+  "lateral_join_ms": 18.4,
+  "window_functions_ms": 1420.0
+}

@@ -1,0 +1,8 @@
+{
+  "brin_index_ms": 4820.0,
+  "btree_index_ms": 0.42,
+  "citext_lower_ms": 0.48,
+  "covering_index_ms": 0.28,
+  "hash_index_ms": 0.38,
+  "seq_scan_ms": 164210.0
+}

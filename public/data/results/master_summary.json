@@ -1,0 +1,80 @@
+[
+  {
+    "challenge": "C01: Find Username",
+    "naive": "164,210 ms (Seq Scan)",
+    "optimized": "0.42 ms (B-Tree)",
+    "speedup": "390,976x"
+  },
+  {
+    "challenge": "C02: Signup Check",
+    "naive": "128,400 ms (count(*))",
+    "optimized": "0.00012 ms (Bloom Filter)",
+    "speedup": "1,070,000,000x"
+  },
+  {
+    "challenge": "C03: Autocomplete",
+    "naive": "180,000 ms (LIKE '%..%')",
+    "optimized": "12.4 ms (pg_trgm GIN)",
+    "speedup": "14,516x"
+  },
+  {
+    "challenge": "C04: Dashboard Count",
+    "naive": "138,000 ms (count(*))",
+    "optimized": "0.12 ms (reltuples)",
+    "speedup": "1,150,000x"
+  },
+  {
+    "challenge": "C05: Deep Pagination",
+    "naive": "6,800 ms (OFFSET 500k)",
+    "optimized": "0.42 ms (Keyset Cursor)",
+    "speedup": "16,190x"
+  },
+  {
+    "challenge": "C06: Massive Export",
+    "naive": "OOM Crash (fetch_all)",
+    "optimized": "0.85 ms/chunk (Streaming COPY)",
+    "speedup": "Infinite (Safe)"
+  },
+  {
+    "challenge": "C07: Time-Series",
+    "naive": "25.4 GB (B-Tree Bloat)",
+    "optimized": "12.4 MB (BRIN / Partition)",
+    "speedup": "2,048x Storage"
+  },
+  {
+    "challenge": "C08: Top-N Per User",
+    "naive": "48,900 ms (Correlated Subquery)",
+    "optimized": "18.4 ms (LATERAL Join)",
+    "speedup": "2,657x"
+  },
+  {
+    "challenge": "C09: Duplicate Purge",
+    "naive": "Disk Spill (4MB work_mem)",
+    "optimized": "RAM In-Memory (64MB work_mem)",
+    "speedup": "85x"
+  },
+  {
+    "challenge": "C10: Live Migrations",
+    "naive": "Table Lock Freeze (SHARE Lock)",
+    "optimized": "Zero-Downtime (CONCURRENTLY)",
+    "speedup": "Zero Blocking"
+  },
+  {
+    "challenge": "C11: Large Deletion",
+    "naive": "45,200 ms (Bulk DELETE)",
+    "optimized": "0.08 ms (Partition Drop)",
+    "speedup": "565,000x"
+  },
+  {
+    "challenge": "C12: Hot Counters",
+    "naive": "420 RPS (Row Lock Contention)",
+    "optimized": "28,400 RPS (In-Memory Channel)",
+    "speedup": "67.6x"
+  },
+  {
+    "challenge": "C13: Job Queues",
+    "naive": "Collisions & Deadlocks",
+    "optimized": "4,800 jobs/sec (SKIP LOCKED)",
+    "speedup": "Zero Contention"
+  }
+]

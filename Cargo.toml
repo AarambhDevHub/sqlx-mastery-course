@@ -1,0 +1,45 @@
+[package]
+name = "sqlx-mastery-course"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.94"
+description = "Aarambh Dev Hub SQLx + PostgreSQL Master Course (Part 1 & Part 2)"
+default-run = "sqlx-mastery-course"
+
+[dependencies]
+sqlx = { version = "0.9.0", features = [
+    "postgres",
+    "runtime-tokio",
+    "tls-rustls",
+    "macros",
+    "uuid",
+    "chrono",
+    "rust_decimal",
+    "json",
+    "migrate",
+    "sqlx-toml"
+] }
+tokio = { version = "1.40", features = ["full"] }
+tokio-stream = "0.1"
+futures = "0.3"
+uuid = { version = "1.10", features = ["v4", "v7", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+rust_decimal = { version = "1.36", features = ["serde", "db-postgres"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenvy = "0.15"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+axum = { version = "0.8", features = ["macros"] }
+tower = "0.5"
+tower-http = { version = "0.6", features = ["trace", "cors"] }
+fastbloom = "0.17"
+rand = "0.8"
+
+[[bin]]
+name = "sqlx-mastery-course"
+path = "src/main.rs"
+
+[[bin]]
+name = "export_benchmark_data"
+path = "src/bin/export_benchmark_data.rs"

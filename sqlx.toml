@@ -1,0 +1,11 @@
+# SQLx 0.9 Configuration File
+
+[macros.preferred-crates]
+date-time = "chrono"
+numeric = "rust_decimal"
+
+[migrate]
+migrations-dir = "migrations"
+
+[migrate.defaults]
+migration-type = "reversible"

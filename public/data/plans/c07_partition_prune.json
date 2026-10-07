@@ -1,0 +1,16 @@
+[
+  {
+    "Execution Time": 1.2,
+    "Plan": {
+      "Node Type": "Append",
+      "Plans": [
+        {
+          "Actual Total Time": 1.2,
+          "Node Type": "Seq Scan",
+          "Relation Name": "events_2026_02"
+        }
+      ],
+      "Subplans Removed": 3
+    }
+  }
+]
